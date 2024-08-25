@@ -1,15 +1,16 @@
 @import "./reset";
-
-
+@import "./typography";
 
 .header {
     background-image: url("../assets/scott-webb-JNPvv1u8yRg-unsplash-1920.jpg");
-    width: 100%;
-    height: 100%;
+    background-size: cover;
+    position: absolute;
+    inset: 0;
 
     &__title {
-        position: absolute;
         color: white;
-        z-index: 1;
+        font-family: Roboto;
+        font-size: 70px;
+        text-transform: uppercase;
     }
 }
