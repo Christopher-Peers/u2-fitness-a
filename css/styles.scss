@@ -1,11 +1,16 @@
 @import "./reset";
 @import "./typography";
 
+body {
+    background-color: black;
+}
+
 .header {
     background-image: url("../assets/scott-webb-JNPvv1u8yRg-unsplash-1920.jpg");
-    background-size: cover;
-    position: absolute;
-    inset: 0;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: right 0 top 0;
+    aspect-ratio: 1;
 
     &__title {
         color: white;
