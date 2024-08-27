@@ -1,8 +1,9 @@
 @import "./reset";
 @import "./typography";
 
-body {
+html, body {
     background-color: black;
+    height: 100%;
 }
 
 .header {
@@ -10,7 +11,7 @@ body {
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: right 0 top 0;
-    aspect-ratio: 1;
+    height: 100%;
 
     &__title {
         color: white;
@@ -19,3 +20,4 @@ body {
         text-transform: uppercase;
     }
 }
+
