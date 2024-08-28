@@ -88,22 +88,35 @@ html, body {
 }
 .header__cta-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   height: 100%;
   flex-direction: column;
+  padding: 0 12px 10%;
 }
 .header__title {
   color: white;
   font-family: Roboto;
-  font-size: 70px;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.header__subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 20px;
   text-transform: uppercase;
 }
 .header__cta {
-  background-color: yellow;
-  color: red;
+  background-color: #CDFE07;
+  color: rgba(13, 18, 22, 0.7019607843);
   align-self: flex-start;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 8px 30px;
+  text-decoration: none;
+  font-family: Roboto;
+  font-weight: bold;
+  margin-top: 40px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=styles.css.map */
