@@ -77,11 +77,6 @@ textarea:not([rows]) {
 html, body {
   height: 100%;
 }
-@media (min-width: 576px) {
-  html, body {
-    background-color: red;
-  }
-}
 
 .header {
   background-image: url("../assets/man_doing_pullup.jpg");
@@ -90,6 +85,11 @@ html, body {
   background-position: center;
   background-size: cover;
   position: relative;
+}
+@media (min-width: 768px) {
+  .header {
+    background-position: top;
+  }
 }
 .header__cta-wrapper {
   display: flex;
@@ -102,6 +102,12 @@ html, body {
   .header__cta-wrapper {
     justify-content: center;
     padding: 0 40px;
+  }
+}
+@media (min-width: 768px) {
+  .header__cta-wrapper {
+    justify-content: flex-end;
+    padding: 0 6% 6%;
   }
 }
 .header__title {
@@ -143,6 +149,11 @@ html, body {
   .header__cta {
     font-size: 30px;
   }
+}
+
+.trainers {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=styles.css.map */
