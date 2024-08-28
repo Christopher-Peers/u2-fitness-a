@@ -75,22 +75,35 @@ textarea:not([rows]) {
 }
 
 html, body {
-  background-color: black;
   height: 100%;
 }
 
 .header {
-  background-image: url("../assets/scott-webb-JNPvv1u8yRg-unsplash-1920.jpg");
-  background-size: 75%;
+  background-image: url("../assets/man_doing_pullup.jpg");
   background-repeat: no-repeat;
-  background-position: right 0 top 0;
   height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.header__cta-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
 }
 .header__title {
   color: white;
   font-family: Roboto;
   font-size: 70px;
   text-transform: uppercase;
+}
+.header__cta {
+  background-color: yellow;
+  color: red;
+  align-self: flex-start;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
