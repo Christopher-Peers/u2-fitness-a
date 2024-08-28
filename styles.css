@@ -77,6 +77,11 @@ textarea:not([rows]) {
 html, body {
   height: 100%;
 }
+@media (min-width: 576px) {
+  html, body {
+    background-color: red;
+  }
+}
 
 .header {
   background-image: url("../assets/man_doing_pullup.jpg");
@@ -93,12 +98,23 @@ html, body {
   flex-direction: column;
   padding: 0 12px 10%;
 }
+@media (min-width: 768px) {
+  .header__cta-wrapper {
+    justify-content: center;
+    padding: 0 40px;
+  }
+}
 .header__title {
   color: white;
   font-family: Roboto;
   font-size: 50px;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .header__title {
+    font-size: 70px;
+  }
 }
 .header__subtitle {
   color: rgba(255, 255, 255, 0.8);
@@ -107,9 +123,14 @@ html, body {
   font-size: 20px;
   text-transform: uppercase;
 }
+@media (min-width: 768px) {
+  .header__subtitle {
+    font-size: 30px;
+  }
+}
 .header__cta {
   background-color: #CDFE07;
-  color: rgba(13, 18, 22, 0.7019607843);
+  color: black;
   align-self: flex-start;
   padding: 8px 30px;
   text-decoration: none;
@@ -117,6 +138,11 @@ html, body {
   font-weight: bold;
   margin-top: 40px;
   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .header__cta {
+    font-size: 30px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

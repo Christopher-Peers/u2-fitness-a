@@ -1,9 +1,13 @@
+@import "./_mixins";
 @import "./_reset";
 @import "./_typography";
 @import "./variables";
 
 html, body {
     height: 100%;
+    @include respond-to('sm') {
+        background-color: red;
+    }
 }
 
 .header {
@@ -20,6 +24,11 @@ html, body {
         height: 100%;
         flex-direction: column;
         padding: 0 12px 10%;
+
+        @include respond-to('md') {
+            justify-content: center;
+            padding: 0 40px;
+        }
     }
 
     &__title {
@@ -28,6 +37,10 @@ html, body {
         font-size: 50px;
         text-transform: uppercase;
         margin-bottom: 20px;
+
+        @include respond-to('md') {
+            font-size: 70px;
+        }
     }
 
     &__subtitle {
@@ -36,11 +49,15 @@ html, body {
         font-weight: 100;
         font-size: 20px;
         text-transform: uppercase;
+
+        @include respond-to('md') {
+            font-size: 30px;
+        }
     }
 
     &__cta {
         background-color: $primary-color;
-        color: $text-primary;
+        color: black;
         align-self: flex-start;
         padding: 8px 30px;
         text-decoration: none;
@@ -48,5 +65,10 @@ html, body {
         font-weight: bold;
         margin-top: 40px;
         text-transform: uppercase;
+
+        @include respond-to('md') {
+            font-size: 30px;
+        }
     }
 }
+
