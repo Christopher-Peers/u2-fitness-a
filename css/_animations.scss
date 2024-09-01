@@ -6,3 +6,12 @@
     opacity: 1;
   }
 }
+
+@keyframes enlarge {
+  from {
+    background-size: scale(1);
+  }
+  to {
+    background-size: scale(1.2);
+  }
+}

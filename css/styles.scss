@@ -103,6 +103,11 @@ html, body {
         border-radius: 1rem;
         padding: $padding-mobile-standard;
 
+        &:hover {
+            animation-name: enlarge;
+            animation-duration: 500ms;
+        }
+
         &--one {
             background-image: url("../assets/trainer-1.jpg");
         }
@@ -126,6 +131,7 @@ html, body {
     &__card-title {
         font-size: 46px;
         color: white;
+        margin-bottom: 1rem;
     }
 
     &__card-description {
