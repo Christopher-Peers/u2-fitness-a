@@ -100,12 +100,14 @@ html, body {
         height: 30rem;
         opacity: 0.9;
         background-size: cover;
+        background-repeat: no-repeat;
         border-radius: 1rem;
         padding: $padding-mobile-standard;
 
         &:hover {
             animation-name: enlarge;
             animation-duration: 500ms;
+            animation-fill-mode: forwards;
         }
 
         &--one {
