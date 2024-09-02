@@ -58,7 +58,7 @@ html, body {
         text-transform: uppercase;
 
         @include respond-to('md') {
-            font-size: 30px;
+            font-size: 3rem;
         }
     }
 
@@ -73,7 +73,7 @@ html, body {
         text-transform: uppercase;
 
         @include respond-to('md') {
-            font-size: 30px;
+            font-size: 3rem;
         }
     }
 }
@@ -144,10 +144,64 @@ html, body {
     }
 }
 
-.ameneties {
+.amenities {
     background-color: $color-black;
+    display: flex;
+    flex-direction: column;
+    padding: $padding-mobile-standard;
+
+    @include respond-to('md') {
+        padding: $padding-desktop-standard;
+    }
 
     &__title {
-        color: white;
+        color: $color-white;
+        align-self: flex-end;
+        text-wrap: balance;
+
+        @include respond-to('md') {
+            font-size: 5rem;
+        }
+    }
+
+    &__card-row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        justify-items: center;
+
+        @include respond-to('md') {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+    }
+
+    &__card {
+        color: $color-primary;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__card-icon {
+        font-size: 4rem;
+    }
+
+    &__card-info {
+        color: $color-white;
+        font-weight: 100;
+    }
+
+    &__card-cta {
+        background-color: $color-primary;
+        color: black;
+        padding: 8px 30px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 4rem;
+        text-transform: uppercase;
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
     }
 }
