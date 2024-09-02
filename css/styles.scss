@@ -151,7 +151,7 @@ html, body {
     padding: $padding-mobile-standard;
 
     @include respond-to('md') {
-        padding: $padding-desktop-standard;
+        padding: 0 6%;
     }
 
     &__title {
@@ -162,7 +162,7 @@ html, body {
         @include respond-to('md') {
             font-size: 5rem;
             line-height: 3;
-            align-self: flex-end;
+            align-self: flex-start;
         }
     }
 
@@ -174,7 +174,8 @@ html, body {
 
         @include respond-to('md') {
             grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
+            gap: 4rem;
+            max-width: 100rem;
         }
     }
 
@@ -211,9 +212,5 @@ html, body {
         text-transform: uppercase;
         font-size: 1.6rem;
         text-align: center;
-
-        @include respond-to('md') {
-            align-self: flex-start;
-        }
     }
 }
