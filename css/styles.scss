@@ -241,7 +241,6 @@ html, body {
 .classes {
     background-color: $color-white;
     height: 100%;
-    padding: $padding-mobile-standard;
 
     @include respond-to('md') {
         padding: $padding-desktop-standard;
@@ -263,6 +262,7 @@ html, body {
         text-wrap: balance;
         display: flex;
         flex-direction: column;
+        padding: $padding-mobile-standard;
 
         @include respond-to('md') {
             width: 50%;
