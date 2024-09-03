@@ -71,6 +71,7 @@ html, body {
         font-weight: bold;
         margin-top: 40px;
         text-transform: uppercase;
+        font-size: 2rem;
 
         @include respond-to('md') {
             font-size: 3rem;
@@ -87,6 +88,7 @@ html, body {
 
     @include respond-to('md') {
         padding: $padding-desktop-standard;
+        padding-top: 6rem;
     }
 
     &__title {
@@ -94,6 +96,7 @@ html, body {
 
         @include respond-to('md') {
             line-height: 3;
+            font-size: 5rem;
         }
     }
 
@@ -156,6 +159,8 @@ html, body {
 
     &__card-description {
         color: $text-primary-light;
+        font-size: 13px;
+        font-weight: 100;
     }
 }
 
@@ -164,6 +169,10 @@ html, body {
     display: flex;
     flex-direction: column;
     padding: $padding-mobile-standard;
+    
+    @include respond-to('md') {
+        padding: $padding-desktop-standard;
+    }
 
     &__wrapper {
         margin: auto;
@@ -226,5 +235,56 @@ html, body {
         text-transform: uppercase;
         font-size: 1.6rem;
         text-align: center;
+    }
+}
+
+.classes {
+    background-color: $color-white;
+    height: 100%;
+    padding: $padding-mobile-standard;
+
+    @include respond-to('md') {
+        padding: $padding-desktop-standard;
+        padding-top: 6rem;
+    }
+
+    &__wrapper {
+        margin: auto;
+        max-width: 96rem;
+        display: flex;
+    }
+
+    &__left {
+        width: 50%;
+        text-wrap: balance;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: $padding-mobile-standard;
+
+        @include respond-to('md') {
+            padding: $padding-desktop-standard;
+        }
+    }
+
+    &__right {
+        width: 50%;
+        height: 50rem;
+    }
+
+    &__video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    &__info {
+        font-size: 13px;
+        font-weight: 100;
     }
 }
