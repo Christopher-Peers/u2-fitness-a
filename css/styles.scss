@@ -82,7 +82,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: $padding-mobile-standard;
+    padding: 8px;
     background-color: $color-primary;
 
     @include respond-to('md') {
@@ -112,7 +112,7 @@ html, body {
         height: 45rem;
         background-size: cover;
         background-repeat: no-repeat;
-        border-radius: 1rem;
+        border-radius: 0.6rem;
         transition: transform 500ms;
         display: flex;
         flex-direction: column;
@@ -127,18 +127,15 @@ html, body {
             width: 100%;
             height: 30rem;
             object-fit: cover;
-            border-top-left-radius: 1rem;
-            border-top-right-radius: 1rem;
-
-            &-wrapper {
-                padding: 4px;
-            }
+            border-top-left-radius: 0.6rem;
+            border-top-right-radius: 0.6rem;
 
             &--one {
                 object-position: 0 -40px;
             }
     
             &--two {
+                filter: brightness(1.8)
             }
     
             &--three {
@@ -168,19 +165,17 @@ html, body {
     flex-direction: column;
     padding: $padding-mobile-standard;
 
-    @include respond-to('md') {
-        padding: 0 6%;
+    &__wrapper {
+        margin: auto;
     }
 
     &__title {
         color: $color-white;
         text-wrap: balance;
-        line-height: 2;
+        line-height: 3;
 
         @include respond-to('md') {
             font-size: 5rem;
-            line-height: 3;
-            align-self: flex-start;
         }
     }
 
@@ -189,11 +184,12 @@ html, body {
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
         justify-items: center;
+        margin: auto;
 
         @include respond-to('md') {
             grid-template-columns: repeat(4, 1fr);
             gap: 4rem;
-            max-width: 100rem;
+            max-width: 96rem;
         }
     }
 
