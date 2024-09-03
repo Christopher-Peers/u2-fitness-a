@@ -252,24 +252,34 @@ html, body {
         margin: auto;
         max-width: 96rem;
         display: flex;
+        flex-direction: column;
+
+        @include respond-to('md') {
+            flex-direction: row;
+        }
     }
 
     &__left {
-        width: 50%;
         text-wrap: balance;
         display: flex;
-        justify-content: center;
         flex-direction: column;
-        padding: $padding-mobile-standard;
 
         @include respond-to('md') {
+            width: 50%;
             padding: $padding-desktop-standard;
+            justify-content: center;
+            align-items: flex-end;
         }
     }
 
     &__right {
-        width: 50%;
-        height: 50rem;
+        height: 30rem;
+
+        @include respond-to('md') {
+            width: 50%;
+            height: 50rem;
+            padding: $padding-desktop-standard;
+        }
     }
 
     &__video {
