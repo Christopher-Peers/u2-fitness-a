@@ -303,6 +303,10 @@ html, body {
     background-color: $color-black;
     padding: $padding-mobile-standard;
 
+    @include respond-to('md') {
+        padding: $padding-desktop-standard;
+    }
+
     &__title {
         color: $color-white;
     }
@@ -310,7 +314,6 @@ html, body {
     &__grid {
         display: grid;
         grid-template-columns: 1fr;
-        background-color: red;
 
         @include respond-to('md') {
             grid-template-columns: repeat(4, 1fr);
@@ -319,6 +322,14 @@ html, body {
         &-wrapper {
             max-width: 96rem;
             margin: auto;
+        }
+    }
+
+    &__story {
+        &-image{}
+
+        &-text{
+            color: $color-white
         }
     }
 }
