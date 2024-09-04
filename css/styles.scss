@@ -314,6 +314,7 @@ html, body {
     &__grid {
         display: grid;
         grid-template-columns: 1fr;
+        gap: 1rem;
 
         @include respond-to('md') {
             grid-template-columns: repeat(4, 1fr);
@@ -326,7 +327,16 @@ html, body {
     }
 
     &__story {
-        &-image{}
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &-image{
+            height: 20rem;
+            width: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+        }
 
         &-text{
             color: $color-white
