@@ -298,3 +298,11 @@ html, body {
         font-weight: 100;
     }
 }
+
+.success {
+    background-color: $color-black;
+
+    &__title {
+        color: $color-white;
+    }
+}
