@@ -343,3 +343,11 @@ html, body {
         }
     }
 }
+
+.contact {
+    background-color: $color-primary;
+    
+    &__title {
+        color: $color-black;
+    }
+}
