@@ -301,8 +301,24 @@ html, body {
 
 .success {
     background-color: $color-black;
+    padding: $padding-mobile-standard;
 
     &__title {
         color: $color-white;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: red;
+
+        @include respond-to('md') {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        &-wrapper {
+            max-width: 96rem;
+            margin: auto;
+        }
     }
 }
