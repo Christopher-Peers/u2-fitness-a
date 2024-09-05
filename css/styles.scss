@@ -336,6 +336,22 @@ html, body {
             width: 100%;
             object-fit: cover;
             filter: grayscale(100%);
+
+            &--one {
+                object-position: 0 -120px;
+            }
+
+            &--two {
+                object-position: 0 0;
+            }
+
+            &--three {
+                object-position: 0 0;
+            }
+
+            &--four {
+                object-position: 0 0;
+            }
         }
 
         &-text{
