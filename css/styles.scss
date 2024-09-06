@@ -240,7 +240,6 @@ html, body {
 
 .classes {
     background-color: $color-white;
-    height: 100%;
 
     @include respond-to('md') {
         padding: $padding-desktop-standard;
