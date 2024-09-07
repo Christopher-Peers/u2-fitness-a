@@ -308,6 +308,11 @@ html, body {
 
     &__title {
         color: $color-white;
+        line-height: 3;
+
+        @include respond-to('md') {
+            font-size: 5rem;
+        }
     }
 
     &__grid {
