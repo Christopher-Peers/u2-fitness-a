@@ -389,6 +389,11 @@ html, body {
         flex-grow: 1;
         display: flex;
         justify-content: flex-end;
+        gap: 1rem;
+
+        a {
+            font-size: 2rem;
+        }
     }
 
     h3 {

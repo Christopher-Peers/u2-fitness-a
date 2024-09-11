@@ -468,6 +468,10 @@ html, body {
   flex-grow: 1;
   display: flex;
   justify-content: flex-end;
+  gap: 1rem;
+}
+.contact__social-wrapper a {
+  font-size: 2rem;
 }
 .contact h3 {
   margin-bottom: 0.8rem;
