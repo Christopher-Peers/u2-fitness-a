@@ -448,9 +448,29 @@ html, body {
 .contact {
   background-color: #CDFE07;
   padding: 12px;
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: 768px) {
+  .contact {
+    padding: 3rem;
+  }
+}
+.contact__address-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 .contact__title {
   color: #000000;
+  margin-bottom: 1rem;
+}
+.contact__social-wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.contact h3 {
+  margin-bottom: 0.8rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
