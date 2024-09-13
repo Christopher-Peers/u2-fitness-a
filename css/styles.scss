@@ -206,7 +206,6 @@ html, body {
         color: $color-primary;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         width: 100%;
     }
 
@@ -224,6 +223,7 @@ html, body {
     &__card-info {
         color: $color-white;
         font-weight: 100;
+        flex: 1;
     }
 
     &__card-cta {

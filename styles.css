@@ -300,7 +300,6 @@ html, body {
   color: #CDFE07;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 100%;
 }
 .amenities__card-icon-wrapper {
@@ -315,6 +314,7 @@ html, body {
 .amenities__card-info {
   color: #ffffff;
   font-weight: 100;
+  flex: 1;
 }
 .amenities__card-cta {
   background-color: #CDFE07;
