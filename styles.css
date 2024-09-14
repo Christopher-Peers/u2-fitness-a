@@ -451,6 +451,8 @@ html, body {
   padding: 12px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
 }
 @media (min-width: 768px) {
   .contact {
